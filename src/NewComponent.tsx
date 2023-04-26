@@ -13,7 +13,7 @@ export const NewComponent = (props: NewComponentType) => {
         <ul>
             {props.students.map((el) => {
                 return(
-                    <li>Name {el.name} Age {el.age}</li>
+                    <li key={el.id}>Name {el.name} Age {el.age}</li>
                 )
             })}
         </ul>
