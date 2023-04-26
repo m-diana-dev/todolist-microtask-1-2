@@ -1,0 +1,12 @@
+
+table{
+  border: 1px solid #000;
+  width: 500px;
+}
+thead{
+  font-weight: 700;
+  background-color: oldlace;
+}
+tr:nth-child(even){
+  background-color: oldlace;
+}
