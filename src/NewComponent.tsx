@@ -1,9 +1,21 @@
 type NewComponentType = {
-    students: any
+    students: StudentType[]
+}
+
+type StudentType = {
+    id: number
+    name: string
+    age: number
 }
 
 export const NewComponent = (props: NewComponentType) => {
     return(
-        <div>new component</div>
+        <ul>
+            {props.students.map((el) => {
+                return(
+                    <li>Name {el.name} Age {el.age}</li>
+                )
+            })}
+        </ul>
     )
 }
