@@ -1,4 +1,8 @@
-export const NewComponent = () => {
+type NewComponentType = {
+    students: any
+}
+
+export const NewComponent = (props: NewComponentType) => {
     return(
         <div>new component</div>
     )
